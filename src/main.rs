@@ -129,6 +129,7 @@ fn get_url_path(request_line: &str, content_type: Vec<&str>) -> (String, Vec<u8>
         return (response, Vec::new());
     }
 }
+
 fn handle_user_agent(user_agent: &str) -> String {
     let trimmed_user_agent = user_agent.trim();
     let content_length = trimmed_user_agent.len();
